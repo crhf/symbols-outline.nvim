@@ -125,8 +125,7 @@ function M.is_client_blacklisted(client_id)
 end
 
 function M.show_help()
-  print 'Current keymaps:'
-  print(vim.inspect(M.options.keymaps))
+  vim.notify(vim.inspect(M.options.keymaps))
 end
 
 function M.setup(options)
